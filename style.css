@@ -16,11 +16,25 @@ body {
     min-width: 100vw;
 }
 
+body::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: #241e35;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #7a36e7;
+    border-radius: 20px;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     
-    padding: 10px 80px;
+    padding: 10px 120px;
     align-items: center;
     border-bottom: 1px solid #362B50;
 }
@@ -36,7 +50,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #6610F2;
+    color: #7a36e7;
 }
 
 .nav-links a:last-child {
@@ -66,16 +80,16 @@ nav {
     width: 290px;
     height: 290px;
     border-radius: 100%;
-    margin-right: 120px;
+    margin-right: 160px;
 }
 
 .content-text {
-    margin: 150px 120px;
+    margin: 150px 160px;
 }
 
 .content-text h2 {
     font-size: 16px;
-    color: #6610F2
+    color: #7a36e7
 }
 
 .content-text h1 {
@@ -91,18 +105,18 @@ button {
 }
 
 button.contact-linkedin {
-    background-color: #6610F2;
+    background-color: #7a36e7;
     margin: 22px 10px 0 0;
 }
 
 button.contact-whatsapp {
     background-color: #0E091B;
-    border: 1px solid #6610F2;
+    border: 1px solid #7a36e7;
     margin: 22px 0 0 0;
 }
 
 button.contact-linkedin:hover {
-    background-color: #8539ff;
+    background-color: #9b5dff;
     cursor: pointer;
 }
 
@@ -152,7 +166,7 @@ h1.subtitle {
     width: 360px;
     border-radius: 5px;
     padding: 20px 30px;
-    border: 1px solid #6610F2;
+    border: 1px solid #7a36e7;
 
     text-align: start;
     
@@ -178,7 +192,7 @@ h1.subtitle {
 
 a.repos {
     text-decoration: none;
-    color: #6610F2;
+    color: #7a36e7;
     font-size: 18px;
     transition: all 500ms ease-in-out;
 }
@@ -241,7 +255,7 @@ footer h2 {
 }
 
 
-@media only screen and (min-width: 1050px) and (max-width: 1240px) {
+@media only screen and (min-width: 1050px) and (max-width: 1169px) {
     #about {
         padding: 0 80px 0 80px;
         padding-bottom: 120px;
@@ -250,6 +264,14 @@ footer h2 {
     #about p {
         margin: 0 50px 0 50px;
         text-align: center;
+    }
+
+    .content img {
+        margin-right: 120px;
+    }
+    
+    .content-text {
+        margin: 150px 120px;
     }
 }
 
