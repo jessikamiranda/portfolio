@@ -1,7 +1,7 @@
 # Portifolio
 
 ## 💻  Sobre
-Projeto desenvolvido com HTML e CSS, totalmente responsivo.
+Projeto desenvolvido com HTML e CSS, totalmente responsivo.<br>
 🖥️ Acesse a página clicando [aqui](https://portifolio-seven-smoky.vercel.app/)
 
 ## 🎨  Layout
