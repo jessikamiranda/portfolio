@@ -10,6 +10,10 @@
     color: #DDDDDD
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0E091B;
     min-height: 100vh;
@@ -59,8 +63,8 @@ nav {
 
 .icon {
     display: flex;
-    
 }
+
 .icon h1 a {
     text-decoration: none;
 }
@@ -145,6 +149,7 @@ h1.subtitle {
 #about p {
     margin: 0 120px 0 120px;
     text-align: center;
+    font-size: 16px;
 }
 
 #projects {
@@ -193,8 +198,9 @@ h1.subtitle {
 a.repos {
     text-decoration: none;
     color: #7a36e7;
-    font-size: 18px;
+    font-size: 16px;
     transition: all 500ms ease-in-out;
+    font-weight: 600;
 }
 
 a.repos:hover {
@@ -462,6 +468,7 @@ footer h2 {
     #projects {
         align-items: center;
         justify-content: center;
+        padding-bottom: 50px;
     }
 
     .projects-cards-container {
