@@ -1,0 +1,45 @@
+footer {
+  width: 100%;
+  height: auto;
+  background-color: $bg-secondary;
+  color: $color-white;
+  padding: $gap-3 0px;
+
+  .grid-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  p {
+    font-size: 1.8rem;
+    a {
+      font-weight: 500;
+      color: $color-main;
+    }
+  }
+
+  img {
+    width: 32px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: $gap-2;
+  }
+
+  @include responsive-desktop {
+    .grid-layout {
+      text-align: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: $gap-5;
+
+      div {
+        display: none;
+      }
+    }
+  }
+}
