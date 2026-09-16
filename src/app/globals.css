@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f7f4;
+  --foreground: #171717;
+
+  --muted: #686868;
+  --border: #deded9;
+
+  --surface: #ffffff;
+
+  --pink: #f4b8cf;
+  --yellow: #f6dc83;
+  --lavender: #b9b0ef;
+  --green: #b9d8b4;
+
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-ui: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* ----------------------------------
+   Interaction system
+---------------------------------- */
+
+.ui-button {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+
+  padding-inline: 1.5rem;
+  border-radius: 999px;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+
+  transition:
+    transform 300ms var(--ease-premium),
+    background-color 300ms var(--ease-ui),
+    color 300ms var(--ease-ui),
+    border-color 300ms var(--ease-ui),
+    opacity 300ms var(--ease-ui);
+}
+
+.ui-button:hover {
+  transform: translateY(-2px);
+}
+
+.ui-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  transition:
+    opacity 250ms var(--ease-ui),
+    color 250ms var(--ease-ui);
+}
+
+.ui-link::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: -0.25rem;
+
+  height: 1px;
+
+  background: currentColor;
+
+  transform: scaleX(0);
+  transform-origin: right;
+
+  transition: transform 350ms var(--ease-premium);
+}
+
+.ui-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.ui-arrow {
+  display: inline-block;
+
+  transition: transform 300ms var(--ease-premium);
+}
+
+.ui-link:hover .ui-arrow,
+.ui-button:hover .ui-arrow {
+  transform: translate(3px, -3px);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+
+  background: var(--background);
+  color: var(--foreground);
+
+  font-family: var(--font-geist), Arial, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .ui-button,
+  .ui-link,
+  .ui-link::after,
+  .ui-arrow {
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes fadeProjectCopy {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

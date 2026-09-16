@@ -1,17 +1,60 @@
-<h1 align="center">
-  💻<br>Portfólio - Jessika Miranda
-</h1>
+# Jessika Miranda - Portfolio
 
-![Resultado final do projeto](assets/image/preview.png)
+Personal portfolio of Jessika Miranda, a Frontend Software Engineer focused on React, Next.js and TypeScript.
 
-<h4 align="center"><a href="https://portifolio-seven-smoky.vercel.app/">Clique para visitar o projeto</a></h4>
+The portfolio was designed and developed as a product-oriented experience, combining frontend engineering, interaction design and project storytelling.
 
-## 💼 Tecnologias utilizadas
+## Live
 
-Foram utilizadas as seguintes tecnologias no desenvolvimento deste site:
+[portfolio-jessikamiranda.vercel.app](https://portfolio-jessikamiranda.vercel.app)
 
-- HTML;
-- Sass;
-- JavaScript;
-- ScrollReveal;
-- SVG Inject;
+## About
+
+The portfolio presents my experience building and modernizing frontend applications, leading frontend development and creating scalable product interfaces.
+
+It includes:
+
+- Professional experience and selected engineering impact
+- A detailed case study for Flowy
+- Responsive and accessible layouts
+- Motion-based interactions and scroll storytelling
+- SEO and social sharing metadata
+- Reduced-motion support
+
+## Featured Project
+
+### Flowy
+
+A full-stack client operations workspace for managing clients, projects and tasks.
+
+The case study covers the product direction, UI system, application architecture, reusable frontend patterns, testing strategy and technology choices behind the project.
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Motion
+- Next.js Image Optimization
+- Vercel
+
+## Design & Engineering
+
+The portfolio was built with a focus on:
+
+- Responsive design
+- Accessibility
+- Semantic HTML
+- Keyboard navigation
+- Reduced-motion support
+- Performance
+- Reusable component architecture
+- Product-focused storytelling
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
