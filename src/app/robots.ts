@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
     },
 
-    sitemap: "https://portfolio-jessikamiranda.vercel.app/sitemap.xml",
+    sitemap: "https://jessikamiranda.vercel.app/sitemap.xml",
   };
 }

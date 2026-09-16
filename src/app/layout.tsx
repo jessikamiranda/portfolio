@@ -9,7 +9,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-jessikamiranda.vercel.app"),
+  metadataBase: new URL("https://jessikamiranda.vercel.app"),
 
   title: {
     default: "Jessika Miranda | Frontend Software Engineer",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Jessika Miranda",
-      url: "https://portfolio-jessikamiranda.vercel.app",
+      url: "https://jessikamiranda.vercel.app",
     },
   ],
 

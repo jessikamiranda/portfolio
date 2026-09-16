@@ -6,7 +6,7 @@ The portfolio was designed and developed as a product-oriented experience, combi
 
 ## Live
 
-[portfolio-jessikamiranda.vercel.app](https://portfolio-jessikamiranda.vercel.app)
+[jessikamiranda.vercel.app](https://jessikamiranda.vercel.app)
 
 ## About
 
